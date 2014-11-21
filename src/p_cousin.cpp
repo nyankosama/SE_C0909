@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:44
+#
+# Filename: p_cousin.cpp
+#
+# Description: P_Cousin问题
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 

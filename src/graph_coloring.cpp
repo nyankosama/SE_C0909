@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:43
+#
+# Filename: graph_coloring.cpp
+#
+# Description: http://poj.org/problem?id=1419
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 #include <cstring>

@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:44
+#
+# Filename: popular_cow.cpp
+#
+# Description: 万人迷问题(http://poj.org/problem?id=2186)
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 #include <stack>

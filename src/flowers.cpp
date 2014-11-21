@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:41
+#
+# Filename: flowers.cpp
+#
+# Description: http://acm.sgu.ru/problem.php?contest=0&problem=104 
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 

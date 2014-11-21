@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:45
+#
+# Filename: zero_one_knapsack.cpp
+#
+# Description: 0/1 背包问题
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 #include <algorithm>

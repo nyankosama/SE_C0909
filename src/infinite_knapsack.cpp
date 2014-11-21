@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:43
+#
+# Filename: infinite_knapsack.cpp
+#
+# Description: 无限背包问题
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 #include <algorithm>

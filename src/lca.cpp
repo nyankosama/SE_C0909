@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:44
+#
+# Filename: lca.cpp
+#
+# Description: 最小公共父节点问题
+#
+=============================================================================*/
 #include <iostream>
 #include <vector>
 
