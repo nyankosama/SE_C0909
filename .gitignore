@@ -1,0 +1,33 @@
+#java settings
+/target/
+/.idea/
+/*.iml
+
+#pyc files
+*.pyc
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Debug programs files
+*.mk
+*.d
+makefile
+
+#vim files
+*.swp
+
+# scons files
+.sconsign.dblite
+*.os
