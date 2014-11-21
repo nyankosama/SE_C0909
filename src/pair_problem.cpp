@@ -1,3 +1,14 @@
+/*=============================================================================
+#
+# Author: Nyankosama email:i@nyankosama.com
+#
+# Last modified: 2014-11-21 04:46
+#
+# Filename: pair_problem.cpp
+#
+# Description: 配对问题 intput: pair pair int int int output:pair<pair<int,int>,int>
+#
+=============================================================================*/
 #include <vector>
 #include <string>
 #include <iostream>
