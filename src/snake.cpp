@@ -116,7 +116,8 @@ int main() {
     start.print_self();
     cout << "bfs begin" << endl;
     while(!q.empty()) {
-        State cur = q.front(); q.pop();
+        State cur = q.front();
+        q.pop();
         cout << "bfs cur$$$$$$$$$$$$$$$$$:" << endl;
         cur.print_self();
         //左右上下
@@ -142,3 +143,4 @@ int main() {
     }
     cout << "Imposible!" << endl;
 }
+
