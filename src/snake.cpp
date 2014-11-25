@@ -13,12 +13,12 @@ bool is_visit[MAX_MAP_N][MAX_MAP_N][4];
 int tx,ty; //target
 int sx,sy; //snake的头部
 int n,m; //n m 是地图的长宽
-int snake_lenth;
+int snake_lenth; //蛇的长度
 
 struct State {
-    int hx;
+    int hx; //头的位置为hx, hy
     int hy;
-    int move;
+    int move; //步数
     char map[MAX_MAP_N][MAX_MAP_N];
     bool is_finish = false;
 
@@ -32,20 +32,6 @@ struct State {
         hy = another.hy;
         move = another.move;
         memcpy(map, another.map, MAX_MAP_N * MAX_MAP_N);
-    }
-
-    void print_self() {
-        cout << "print_self start===========" << endl;
-        cout << "hx:" << hx << ", hy:" << hy << endl;
-        cout << "move:" << move << endl;
-        cout << "map:" << endl;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                cout << map[i][j] << " ";
-            }
-            cout << endl;
-        }
-        cout << "print_self end===========" << endl;
     }
 
     bool can_go(int x, int y) {
@@ -104,36 +90,24 @@ void output(int move) {
     cout << move << endl;
 }
 
-
-
 int main() {
-    //freopen("./testcase/snake_input.txt", "r", stdin);
+    freopen("./testcase/snake_input.txt", "r", stdin);
     input();
     State start(sx, sy, map);
     queue<State> q;
     q.push(start);
-    cout << "start" << endl;
-    start.print_self();
-    cout << "bfs begin" << endl;
     while(!q.empty()) {
         State cur = q.front();
         q.pop();
-        cout << "bfs cur$$$$$$$$$$$$$$$$$:" << endl;
-        cur.print_self();
         //左右上下
         for (int i = 0; i < 4; i++) {
             int x = cur.hx + dx[i];
             int y = cur.hy + dy[i];
             State next(cur);
-            cout << "bfs next x:" << x << ", y:" << y << endl;
             if (cur.can_go(x, y) && !is_visit[x][y][i]) {
                 next.go(x, y);
                 is_visit[x][y][i] = true;
-                cout << "next ok:" << endl;
-                next.print_self();
                 if (next.is_finish) {
-                    cout << "finish!" << endl;
-                    next.print_self();
                     output(next.move);
                     return 0;
                 }
@@ -141,6 +115,4 @@ int main() {
             }
         }
     }
-    cout << "Imposible!" << endl;
 }
-
