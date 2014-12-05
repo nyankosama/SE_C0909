@@ -32,13 +32,15 @@ bool process_pair(vector<string>::size_type start, string& res){
     if (start == tokenList.size()) return false;
     string token = tokenList[start];
     res += token;
-    bool ret = false;
+    bool ret = true;
     if (token == "pair"){
         res += "<";
         ret = process_pair(++start, res);
         res += ",";
         ret = process_pair(++start, res);
         res += ">";
+    } else{
+        ret = false; 
     }
     return ret;
 }
